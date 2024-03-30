@@ -24,6 +24,15 @@ const Header = () => {
                             Contact
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink
+                            to='/login'
+                            className={({ isActive, isPending }) =>
+                         isPending ? "pending" : isActive ? "text-blue-500" : ""
+                        }>
+                            Login
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </nav>
